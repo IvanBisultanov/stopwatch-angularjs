@@ -1,5 +1,7 @@
 # Getting Started
 ## Dependencies
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/IvanBisultanov/stopwatch-angularjs.svg)](https://greenkeeper.io/)
 Tools needed to run this app:
 * `node` and `npm`
 
