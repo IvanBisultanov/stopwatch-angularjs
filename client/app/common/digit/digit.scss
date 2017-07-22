@@ -1,0 +1,29 @@
+.digit {
+  font-size: 42px;
+  position: relative;
+  width: 20px;
+  text-align: right;
+  font-family: 'digital';
+  .records & {
+    font-size: 24px;
+    width: 11px;
+  }
+  &:before {
+    position: absolute;
+    content: '8';
+    left: 0;
+    top: 0;
+    right: 0;
+    color: #334622;
+    .records & {
+      color: #424242;
+    }
+  }
+  &__value {
+    position: relative;
+    color: #82da30;
+    .records & {
+      color: #fff;
+    }
+  }
+}

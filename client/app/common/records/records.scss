@@ -1,0 +1,33 @@
+.records {
+  width: 100%;
+  max-width: 337px;
+  margin: 0 auto;
+  &__timestamp {
+    display: flex;
+    justify-content: space-between;
+    line-height: 55px;
+    color: #fff;
+    align-items: center;
+    padding-bottom: 5px;
+    &:hover .records__remove-timestamp {
+      opacity: 1;
+    }
+    &:not(:first-child) {
+      border-top: 1px solid #606060;
+    }
+  }
+  &__remove-timestamp {
+    background: #ff0000;
+    line-height: 24px;
+    color: #fff;
+    padding: 0 6px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: -0.55px;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity .2s ease-out;
+    position: relative;
+    top: 1px;
+  }
+}

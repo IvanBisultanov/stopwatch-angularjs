@@ -1,0 +1,10 @@
+<div class="clock-face">
+  <digit digit="vm.getMinutes()"></digit>
+  <digit digit="vm.getMinutes(1)"></digit>
+  <div class="clock-face__separator _colon" ng-style="{opacity: vm.timer ? vm.timestampProvider.timer.isDelimitersVisible ? 1 : .3 : 1}">:</div>
+  <digit digit="vm.getSeconds()"></digit>
+  <digit digit="vm.getSeconds(1)"></digit>
+  <div class="clock-face__separator _dot" ng-style="{opacity: vm.timer ? vm.timestampProvider.timer.isDelimitersVisible ? 1 : .3 : 1}">.</div>
+  <digit digit="vm.getMs()"></digit>
+  <digit digit="vm.getMs(1)"></digit>
+</div>

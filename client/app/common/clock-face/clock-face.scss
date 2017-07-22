@@ -1,0 +1,26 @@
+.clock-face {
+  display: flex;
+  color: #fff;
+  justify-content: center;
+  user-select: none;
+  align-items: flex-end;
+  &__separator {
+    width: 19px;
+    text-align: center;
+    color: #82da30;
+    font-size: 36px;
+    position: relative;
+    transition: opacity .05s;
+    .records & {
+      color: #fff;
+      width: 8px;
+      font-size: 18px;
+    }
+    &._dot {
+      top: 4px;
+    }
+    ._moz .records &._colon {
+      top: 2px;
+    }
+  }
+}

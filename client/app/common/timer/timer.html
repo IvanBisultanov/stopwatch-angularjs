@@ -1,0 +1,20 @@
+<div class="timer" storage>
+  <div class="timer__clock-face">
+    <clock-face timer="true" timestamp="vm.timestampProvider.timer.currentTime"></clock-face>
+  </div>
+  <div class="timer__controls">
+    <button class="timer__btn _play-pause" type="button" title="Play / Pause"
+            ng-click="vm.toggleTimerState()">
+      <i class="fa fa-{{vm.isStopped() ? 'play' : 'pause'}}" aria-hidden="true"></i>
+      {{vm.isStopped() ? 'Play' : 'Pause'}}
+    </button>
+    <button class="timer__btn _add-timestamp" type="button" title="Add timestamp"
+            ng-click="vm.addTimestamp()">
+      <i class="fa fa-clock-o" aria-hidden="true"></i>
+    </button>
+    <button class="timer__btn _reset" type="button" title="Reset timer"
+            ng-click="vm.resetTimer()">
+      <i class="fa fa-trash-o" aria-hidden="true"></i>
+    </button>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+<ul class="records" role="list">
+  <li class="records__timestamp"
+      ng-repeat="record in vm.timestampProvider.records track by $index">
+    <clock-face timestamp="record"></clock-face>
+    <button class="records__remove-timestamp" type="button" title="Remove timestamp"
+            ng-click="vm.removeRecord($index)">
+      Remove
+    </button>
+  </li>
+</ul>
